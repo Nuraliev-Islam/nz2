@@ -1,0 +1,60 @@
+.creations {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        font-size: 45px;
+        transform: translateY(170%);
+    }
+
+    .swiper {
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper-wrapper {
+        width: 90%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: white;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .creations{
+        height: 700px;
+        
+        &__text{
+            font-size: 35px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .creations{
+        &__text{
+            font-size: 27px;
+        }
+    }
+}

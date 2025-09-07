@@ -1,0 +1,55 @@
+.header{
+    background-color: var(--color-dark);
+    border-bottom: 1px solid rgb(19, 19, 19);
+    width: 100%;
+    position: fixed;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 20px;
+    z-index: 1000;
+
+
+    &__logo{
+        width: 50px;
+        border-radius: 45%;
+
+        &__img{
+            
+            border-radius: 50%;
+        }
+    }
+
+    &__nav{
+        &__links{
+            display: flex;
+            gap: 20px;
+
+            &__link{
+                color: var(--color-light);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header{
+        gap: 15px;
+        &__logo{
+            width: 30px;
+        }
+
+        &__nav{
+            &__links{
+                gap: 15px;
+
+                &__link{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
