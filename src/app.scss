@@ -171,6 +171,7 @@ button{
   color: var(--color-light);
   padding: 10px 20px;
   transition: .35s;
+  border-radius: 3px;
 
   &:hover{
     background-color: #500505;
