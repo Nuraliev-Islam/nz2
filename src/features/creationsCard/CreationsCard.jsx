@@ -1,4 +1,4 @@
-import "./creationsCard.scss"
+import "./creationsCard.scss";
 
 export const CreationsCard = ({ img, title, desc, link }) => {
 
@@ -16,12 +16,12 @@ export const CreationsCard = ({ img, title, desc, link }) => {
 
   return (
     <div className='creationsCard'>
-      <img className='creationsCard__img' src={img} alt="" loading='lazy' />
+      <img className='creationsCard__img' src={img} alt='' loading='lazy' />
 
       <div className="creationsCard__desc">
         <h1 className='creationsCard__desc__title'>{title}</h1>
         <p className='creationsCard__desc__desc'>{handleText(desc)}</p>
-        <a target="blank" href={link}><button className='creationsCard__link'>Смотреть сейчас</button></a>
+        <a className='creationsCard__link btn' target="blank" href={link}>Смотреть сейчас</a>
       </div>
     </div>
   )
