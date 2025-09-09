@@ -1,7 +1,13 @@
 .creationsCard{
-    height: 400px;
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    padding: 3px;
     transition: .3s;
+    border-radius: 6px;
+    background: rgb(14, 14, 14);
+    border: 1px solid rgb(36, 36, 36);
 
     &:hover{
         transform: scale(1.1);
@@ -14,6 +20,7 @@
     }
 
     &__link{
+        margin-top: auto;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -23,21 +30,21 @@
     &__desc{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 10px;  
 
         &__title{
-            font-size: 17px;
+            font-size: 16px;
         }
 
         &__desc{
-            font-size: 15px;
+            font-size: 14px;
         }
     }
 }
 
 @media screen and (max-width:1200px){
     .creationsCard{
-        width: 60%;
+        width: 75%;
 
         &__desc{
             &__desc{
@@ -49,11 +56,20 @@
 
 @media screen and (max-width:576px){
     .creationsCard{
-        width: 60%;
+        padding: 0;
+        width: 65%;
+
+        &:hover{
+            transform: scale(1);
+        }
+
+        &__link{
+            padding: 10px 10px;
+        }
 
         &__desc{
             &__title{
-                font-size: 14px;
+                font-size: 12px;
             }
 
             &__desc{

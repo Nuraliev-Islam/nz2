@@ -18,10 +18,13 @@
     }
 
     .swiper-wrapper {
+        display: flex;
+        align-items: center;
         width: 90%;
     }
 
     .swiper-slide {
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,19 +45,32 @@
 }
 
 @media screen and (max-width:1200px) {
-    .creations{
-        height: 700px;
-        
-        &__text{
+    .creations {
+        height: 800px;
+
+        &__text {
             font-size: 35px;
         }
     }
 }
 
 @media screen and (max-width:576px) {
-    .creations{
-        &__text{
+    .creations {
+        height: 600px;
+
+        &__text {
             font-size: 27px;
         }
+
+        .swiper-slide {
+            height: 360px;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 25px;
+        }
+
     }
+
 }
