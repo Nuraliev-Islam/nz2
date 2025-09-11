@@ -6,7 +6,7 @@ import boosty from '../../shared/icon/boosty.svg';
 export const Connect = () => {
     return (
         <div id='cont' className='container connect'>
-            <h1 className='connect__title'>Свяжитесь с нами</h1>
+            <h1 className='connect__title'>Контакты Nazzy</h1>
 
             <div className="connect__link">
                 <a href="https://www.youtube.com/@NazzyChannel">
