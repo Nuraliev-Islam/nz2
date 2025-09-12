@@ -9,14 +9,14 @@ export const Connect = () => {
             <h1 className='connect__title'>Контакты Nazzy</h1>
 
             <div className="connect__link">
-                <a href="https://www.youtube.com/@NazzyChannel">
+                <a target='blank' href="https://www.youtube.com/@NazzyChannel">
                     <div className='flex'>
                         <FaYoutube size={30} color="white" />
                         <h1>YouTube</h1>
                     </div>
                 </a>
 
-                <a href="https://t.me/nazzy_ch">
+                <a target='blank' href="https://t.me/nazzy_ch">
                     <div className='flex'>
                         <FaTelegramPlane size={30} color="white" />
                         <h1>Telegram</h1>
@@ -24,21 +24,21 @@ export const Connect = () => {
                 </a>
                     
 
-                <a href="https://discord.gg/pgxw3he">
+                <a target='blank' href="https://discord.gg/pgxw3he">
                     <div className='flex'>
                         <FaDiscord size={30} color="white" />
                         <h1>Discord</h1>
                     </div>
                 </a>
 
-                <a href="https://vk.com/nazzydiatriche">
+                <a target='blank' href="https://vk.com/nazzydiatriche">
                     <div className='flex'>
                         <img src={vk} alt="" loading='lazy' />
                         <h1>VK</h1>
                     </div>
                 </a>
 
-                <a href="https://boosty.to/nazzych">
+                <a target='blank' href="https://boosty.to/nazzych">
                     <div className='flex'>
                         <img src={boosty} alt="" loading='lazy' />
                         <h1>Boosty</h1>

@@ -22,11 +22,16 @@
         }
     }
 
-    &__btn{
+    .btn{
         border: 1px solid var(--color-red);
         background-color: var(--color-dark);
         color: var(--color-red);
         gap: 5px;
+
+        &:hover{
+            color: var(--color-light);
+            background-color: #500505;
+        }
     }
 }
 

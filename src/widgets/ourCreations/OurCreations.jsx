@@ -54,6 +54,7 @@ export const OurCreations = () => {
 
             <Swiper
                 modules={[Navigation, Pagination]}
+                loop={true}
                 navigation
                 pagination={{ clickable: true }}
                 breakpoints={{
